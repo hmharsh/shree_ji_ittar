@@ -73,6 +73,7 @@ const productUrlMap = [
     {name: "tuscan_lather",id: "d8fd2d15-d87f-417b-b9bd-a2316592b501"},
     {name: "sleep_roll_on",id: "ce86a287-d741-4fbe-ac3b-391076ee8fac"},
     {name: "focus_boost_roll_on",id: "929ab7c7-48d1-442a-92d6-9cc60e378e28"},
+    {name: "pain_killer_rollon", id: "0c705116-d8c3-43a0-a8e2-6540d4d80836"}
     {name: "personalized_ittar",id: "17f74adf-910f-4c58-88c5-f4e194162c49"},
     {name: "personalised_spray_perfume",id: "dfaaa5f5-ea31-4e1f-8192-d9c3edc297f3"},
     {name: "boss_perfume",id: "84da9fe1-1efc-41db-b24d-599f4c9c67a4"},
