@@ -43,6 +43,7 @@ const productUrlMap = [
     {name: "tuscan_lather_spray_perfume",id: "a5da3c2d-220f-49cf-a468-bf181a2a1ee8"},
     {name: "black_current_fragrance_spray_perfume",id: "a829dac1-a063-450b-b5c0-1a9ed86230c2"},
     {name: "ylang_ylang_spray_perfume",id: "a8370357-c77e-4757-9479-52de82f73ef7"},
+    {name: "saffron_spray_perfume", id: "f157f297-6adb-41f3-8009-05a09026ccbf"},
     {name: "cranberry_fragrance_spray_perfume",id: "aaeacf8d-6bc4-41eb-a79e-1157c167231f"},
     {name: "aqua_fresh_spray_perfume",id: "ab244ab9-2121-4268-b24b-b9688427b706"},
     {name: "belpatra_spray_perfume",id: "b23b87d9-342d-458e-8760-7e8023fb309a"},
