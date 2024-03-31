@@ -82,7 +82,8 @@ const productUrlMap = [
     {name: "signature",id: "6da721a1-143b-4a74-ab19-e30238722b64"},
     {name: "infinity",id: "49d6348c-8d42-4078-a5ce-a0f075eaedc2"},
     {name: "cr7",id: "acd55857-eb33-4466-abea-83eea580dbf5"},
-    {name: "itch_care_rollon", id: "a1c3ae65-ea29-4d89-b67c-1a36dd77c50c"}
+    {name: "itch_care_rollon", id: "a1c3ae65-ea29-4d89-b67c-1a36dd77c50c"},
+    {name: "rose_perfume", id: "c2ddcd62-429f-4b1d-b0b2-e00932a78703"}
 ]
 
 productUrlMap.forEach(function(item){
