@@ -25,7 +25,7 @@ const productUrlMap = [
     {name: "cool_water_spray_perfume",id: "358075cb-dda6-4c20-a673-1ec65c4b8957"},
     {name: "ice_berg_fragrance_spray_perfume",id: "38d1e3d0-8232-4683-8b1c-85820d711177"},
     {name: "amber_ittar",id: "40e2cea1-7bbe-4e25-8845-f336a317f04a"},
-    {name: "cherry_blossom_spray_perfume",id: "45eeb632-58d9-4fa8-a8ed-4a69dec66bcf"},
+    {name: "blossom_spray_perfume",id: "45eeb632-58d9-4fa8-a8ed-4a69dec66bcf"},
     {name: "mogra_spray_perfume",id: "4ab4528f-e331-4005-b757-bbe11203192e"},
     {name: "lavender_fragrance_spray_perfume",id: "5599facf-ee0f-4ec4-8a74-47b0616eb4a2"},
     {name: "dalchini_or_cinnamon_ittar",id: "5d558346-a6f2-4212-abe1-cdaae8cbe5ae"},
@@ -82,6 +82,7 @@ const productUrlMap = [
     {name: "signature",id: "6da721a1-143b-4a74-ab19-e30238722b64"},
     {name: "infinity",id: "49d6348c-8d42-4078-a5ce-a0f075eaedc2"},
     {name: "cr7",id: "acd55857-eb33-4466-abea-83eea580dbf5"},
+    {name: "itch_care_rollon", id: "a1c3ae65-ea29-4d89-b67c-1a36dd77c50c"}
 ]
 
 productUrlMap.forEach(function(item){
