@@ -84,7 +84,8 @@ const productUrlMap = [
     {name: "cr7",id: "acd55857-eb33-4466-abea-83eea580dbf5"},
     {name: "itch_care_rollon", id: "a1c3ae65-ea29-4d89-b67c-1a36dd77c50c"},
     {name: "rose_perfume", id: "c2ddcd62-429f-4b1d-b0b2-e00932a78703"},
-    {name: "natural_ittar_combo", id:"a05f3b94-888c-4237-ba30-fdf6db907458"}
+    {name: "natural_ittar_combo", id:"a05f3b94-888c-4237-ba30-fdf6db907458"},
+    {name: "ajwain_ittar", id: "700948b6-965b-45d2-943e-02dedb12aaff"}
 ]
 
 productUrlMap.forEach(function(item){
