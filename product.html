@@ -59,7 +59,7 @@
             }
             document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("product_img").src = "./images/product/"+location.href.split('#')[1]+".jpeg";
-                document.getElementById("product_description").textContent=loadFile('./product_description/ajwain_ittar.txt');
+                document.getElementById("product_description").textContent=loadFile("./product_description/"+location.href.split('#')[1]+".txt");
 
                 
                 // const response = await fetch('./product_description/ajwain_ittar.txt'); // Replace 'data.txt' with your file name
