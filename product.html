@@ -10,7 +10,6 @@
       gtag('config', 'G-QM7N8R0GC0');
     </script>
     <meta name="msvalidate.01" content="6D5465A7B911D6B8DBFDE7621EE2EA26" />
-    <script src="./js/page_navigation.js"></script>
     <title>Welcome to Shree Ji skin-friendly ittar</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <meta name="msvalidate.01" content="55125CBE22A367F8B1DCF74F128F8160" />
@@ -48,12 +47,37 @@
   </head> 
   <body>
     <script>
-            window.location.href = "https://shreejiittar.mini.store";
-            // //window.location.href ="https://smartbiz.in/shreejiittar";
-    </script>
-    <img src="./images/logo.png" alt="Image not available" class="center" width="250" height="250"></img>
-    <a href="https://shreejiittar.mini.store"><h1 align="center">Way to our online store ... <h1></a>
+            function loadFile(filePath) {
+              var result = null;
+              var xmlhttp = new XMLHttpRequest();
+              xmlhttp.open("GET", filePath, false);
+              xmlhttp.send();
+              if (xmlhttp.status==200) {
+                result = xmlhttp.responseText;
+              }
+              return result;
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("product_img").src = "./images/product/"+location.href.split('#')[1]+".jpeg";
+                document.getElementById("product_description").textContent=loadFile('./product_description/ajwain_ittar.txt');
 
+                
+                // const response = await fetch('./product_description/ajwain_ittar.txt'); // Replace 'data.txt' with your file name
+                // var textFile = readFile( "./product_description/ajwain_ittar.txt", "t" );
+                // document.getElementById("product_description").textContent=fileText
+                
+                
+                
+            });
+            console.log(location.href.split('#')[1])
+            
+            
+    </script>
+    <img src="./images/logo.png" alt="Image not available" class="center" width="100" height="100"></img>
+    <img id="product_img" src="" width="300" height="300"></img>
+    <div id="product_description"></div>
+    <a href="https://shreejiittar.mini.store"><h1 align="center">Way to our online store ... <h1></a>
+    
     <footer align="center">
             <p>&copy; 2024 Shreejiittar.in</p>
     </footer>
