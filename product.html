@@ -1,85 +1,52 @@
 <html>
   <head>
-    <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QM7N8R0GC0"></script>
-     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-QM7N8R0GC0');
-    </script>
-    <meta name="msvalidate.01" content="6D5465A7B911D6B8DBFDE7621EE2EA26" />
-    <title>Welcome to Shree Ji skin-friendly ittar</title>
+    <title>Welcome to Shree Ji ittar & perfume</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <meta name="msvalidate.01" content="55125CBE22A367F8B1DCF74F128F8160" />
-
-    <meta charset="UTF-8">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta name="author" content="Lalita Mahajan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="shreejiittar.in: Find your perfect ittar/attar & perfume fragrances at delightful prices">
     <meta name="keywords" content="ittars,itra,attar, aromatherapy, homemade, skin-friendly, natural, temple, worship, affordable, online, India, Khargone, shreeji">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-
-
-    <meta property="og:title" content="Shreejiittar.in: Original, Skin-Friendly Ittar" />
+    <meta property="og:title" content="Shreejiittar.in: Perfume & Skin-Friendly Ittar" />
     <meta property="og:description" content="shreejiittar.in: Find your perfect ittar/attar & perfume fragrances at delightful prices" />
     <meta property="og:image" content="https://www.shreejiittar.in/images/logo.png" />
     <meta property="og:site_name" content="Shreejiittar.in" />
     <meta property="og:url" content="https://www.shreejiittar.in/" />
     <meta property="og:type" content="website" />
-
-
-    <style>
-     .center {
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-     }
-     footer {
-       background-color: #eee;
-       padding: 20px;
-       text-align: center;
-     }
-    </style>
+    <script src="./js/product_page_js.js"></script>
   </head> 
   <body>
-    <script>
-            function loadFile(filePath) {
-              var result = null;
-              var xmlhttp = new XMLHttpRequest();
-              xmlhttp.open("GET", filePath, false);
-              xmlhttp.send();
-              if (xmlhttp.status==200) {
-                result = xmlhttp.responseText;
-              }
-              return result;
-            }
-            document.addEventListener("DOMContentLoaded", function() {
-                document.getElementById("product_img").src = "./images/product/"+location.href.split('#')[1]+".jpeg";
-                document.getElementById("product_description").textContent=loadFile("./product_description/"+location.href.split('#')[1]+".txt");
 
-                
-                // const response = await fetch('./product_description/ajwain_ittar.txt'); // Replace 'data.txt' with your file name
-                // var textFile = readFile( "./product_description/ajwain_ittar.txt", "t" );
-                // document.getElementById("product_description").textContent=fileText
-                
-                
-                
-            });
-            console.log(location.href.split('#')[1])
-            
-            
-    </script>
-    <img src="./images/logo.png" alt="Image not available" class="center" width="100" height="100"></img>
-    <img id="product_img" src="" width="300" height="300"></img>
-    <div id="product_description"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="./images/logo.png" alt="Image not available" width="100" height="100"></img>
+        </div>
+        <div class="col-md-10">
+          <h1>Shree Ji Ittar & perfume</h1>
+          <p>Find your perfect fragrance at delightful price</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img id="product_img" src="" width="300" height="300"></img>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div id="product_title" style="font-weight: bold; font-size:x-large;"></div>
+          </div>
+          <div class="row">
+            <div id="product_description" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <a href="https://shreejiittar.mini.store"><h1 align="center">Way to our online store ... <h1></a>
-    
-    <footer align="center">
-            <p>&copy; 2024 Shreejiittar.in</p>
-    </footer>
   </body>
 </html>
