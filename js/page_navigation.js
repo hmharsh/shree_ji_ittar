@@ -17,7 +17,7 @@ const productUrlMap = [
     {name: "geeli_mitti", id: "da89ccfd-f9e9-469b-b34d-54ae436db465"},
     {name: "cherry_fragrance_spray_perfume",id: "0035d83a-cb1f-4176-b733-3b4e1d6289c5"},
     {name: "oud_ittar",id: "0cf8977f-0dff-420b-b0d5-16278386146d"},
-    {name: "talcum_powder_fragrance",id: "0d9d4909-188a-4781-9eb2-eeb762c2ffe4"},
+    {name: "talcum_powder_spray_perfume",id: "0d9d4909-188a-4781-9eb2-eeb762c2ffe4"},
     {name: "1881_fragrance_spray_perfume",id: "17c41ba8-0d5b-46e7-875d-9667ea0a380c"},
     {name: "bubblegum_or_boomer_fragrance_spray_perfume",id: "1b2ace28-f713-43e8-b9b7-c5050eabf6ab"},
     {name: "emir_fragrance_spray_perfume",id: "1e4c025f-d260-4665-b4c7-076b3cc41b52"},
