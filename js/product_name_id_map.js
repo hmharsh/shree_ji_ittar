@@ -92,5 +92,8 @@ const productUrlMap = [
     {name: "kesar_mogra_chandan_ittar", id: "7fcee10e-da72-44d4-937c-a13d8aa3a435"},
     {name: "kesar_mogra_ittar", id: "01571a76-ddc0-4fd1-88db-b2d819c61e6d"},
     {name: "gulab_chandan_ittar", id: "c48f43fe-73b3-47bc-9ca7-85662d91d486"},
-    {name: "mogra_chandan_ittar", id: "7d9c77af-42ff-4de7-9b75-02d5708c32d0"}
+    {name: "mogra_chandan_ittar", id: "7d9c77af-42ff-4de7-9b75-02d5708c32d0"},
+    {name: "khus_cooler_perfume", id: "cf9356e4-44d4-4e88-b252-c33564105c10"},
+    {name: "chandan_cooler_perfume", id: "5896e0d2-f662-4af7-9701-092be2c2c445"},
+    {name: "kaweda_chandan_ittar", id: "b743dad9-eced-4aa7-9fe7-a4b4a14a675b"}
 ]
