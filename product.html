@@ -9,30 +9,41 @@
   </head>
   <body>
 
+    <script>
+      window.renderBadge = function() {
+        var ratingBadgeContainer = document.createElement("div");
+        document.body.appendChild(ratingBadgeContainer);
+        window.gapi.load('ratingbadge', function() {
+          window.gapi.ratingbadge.render(ratingBadgeContainer, {"merchant_id": 5308252776});
+        });
+      }
+    </script>
+
 
     <!-- Start Top Bar -->
     <div class="top-bar">
       <div class="row">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text"><img src="./images/logo.png" alt="Image not available" width="50" height="50"></img></li>
-            <li class="menu-text">Shree Ji Ittar</li>
-            <!-- <li class="has-submenu">
-              <a href="#">One</a>
+            <!-- <li class="menu-text"><img src="./images/logo.png" alt="Image not available" width="50" height="50"></img></li> -->
+            <li class="menu-text">SHREE JI ITTAR & PERFUME</li>
+             <!-- <li class="has-submenu">
+              <a href="#">Catalogue</a>
               <ul class="submenu menu vertical" data-submenu>
                 <li><a href="#">One</a></li>
                 <li><a href="#">Two</a></li>
                 <li><a href="#">Three</a></li>
               </ul>
-            </li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li> -->
+            </li> -->
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div class="top-bar-right">
           <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
+
+            <!-- <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li> -->
           </ul>
         </div>
       </div>
@@ -71,7 +82,6 @@
 
         <div class="small secondary expanded button-group">
             <a class="button" href="https://www.instagram.com/shree_ji_ittar/" target="_blank">Instagram</a>
-            <a class="button" href="https://www.facebook.com/shreejiittar" target="_blank">Facebook</a>
             <a class="button" href="https://wa.me/9407472537" target="_blank">Whatsapp</a>
             <a class="button" href="https://maps.app.goo.gl/RaQUmqNd728Fkkkh8" target="_blank">Direction</a>
           </div>
@@ -87,6 +97,7 @@
       <div class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
           <h4>Reviews</h4>
+          <script src="https://apis.google.com/js/platform.js?onload=renderBadge" async defer></script>hello
           <div class="media-object stack-for-small">
             <div class="media-object-section">
               <img class="thumbnail" src="https://placehold.it/200x200">
