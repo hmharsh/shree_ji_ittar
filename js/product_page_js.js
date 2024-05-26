@@ -1,3 +1,16 @@
+// On image click
+function swapImg(i){
+  console.log(document.getElementById("product_img"))
+  let tmpImg =  document.getElementById("product_img").getAttribute('src'); // Current main imaget
+  document.getElementById("product_img").src = document.getElementById("additionalImg"+i).getAttribute('src');
+  document.getElementById("additionalImg"+i).src=tmpImg
+}
+
+function addExtraImages(productType){
+  document.getElementById("additionalImg1").src = "./images/additional/"+productType+"/1.jpeg";
+  document.getElementById("additionalImg2").src = "./images/additional/"+productType+"/2.jpeg";
+  document.getElementById("additionalImg3").src = "./images/additional/"+productType+"/3.jpeg";
+}
 function populateSizetable(sizePriceMap){
      var row = document.getElementById("size_price_table").insertRow();
      for (const [key, value] of Object.entries(sizePriceMap)) {
@@ -5,6 +18,7 @@ function populateSizetable(sizePriceMap){
         row.insertCell().textContent = `₹${value}`
       }
 }
+
 
 // Read product description
 function loadFile(filePath) {
@@ -22,6 +36,7 @@ function loadFile(filePath) {
   document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("product_title").textContent=location.href.split('#')[1].replaceAll("_", " ").toUpperCase()
   document.getElementById("product_img").src = "./images/product/"+location.href.split('#')[1]+".jpeg";
+
 
   // Identify product_type
   product_type=undefined
@@ -49,12 +64,12 @@ function loadFile(filePath) {
       }
     } else if (window.location.hash.includes("_rollon")) {
       product_type = "rollon";
+      ([{"2ml": "40"},{"3ml": "50"}, {"6ml": "80"}, {"12ml": "120"} ]).forEach(populateSizetable)
     }
      else {
         window.location = "https://shreejiittar.mini.store"
     }
-
-
+    addExtraImages(product_type)
     
     // Load description
     document.getElementById("product_description").textContent=loadFile("./product_description/"+location.href.split('#')[1]+".txt");

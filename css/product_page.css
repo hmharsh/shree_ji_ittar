@@ -13,3 +13,11 @@ table td {
     border-right: 1px solid #000;
     border-bottom: 1pt solid black;
 }
+
+.thumbnail1 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail1:hover {
+    transform: scale(1.1);
+}
