@@ -1,0 +1,15 @@
+th {
+    background-color: rgb(241, 241, 241);
+    font-weight: bolder;
+    font-size: larger;
+    border-bottom: 1.5pt solid black;
+    border-top: 1pt solid black;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+table td {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1pt solid black;
+}

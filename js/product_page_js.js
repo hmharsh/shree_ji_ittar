@@ -1,10 +1,9 @@
-// Initialise variables
-function populateSizeDropdown(value){
-      let opt = document.createElement("option");
-      opt.value = value; // the index
-      opt.innerHTML = value;
-      setTimeout
-      document.getElementById('size_dropdown').append(opt);
+function populateSizetable(sizePriceMap){
+     var row = document.getElementById("size_price_table").insertRow();
+     for (const [key, value] of Object.entries(sizePriceMap)) {
+        row.insertCell().textContent = `${key}`
+        row.insertCell().textContent = `₹${value}`
+      }
 }
 
 // Read product description
@@ -28,20 +27,35 @@ function loadFile(filePath) {
   product_type=undefined
   if (window.location.hash.includes("_cooler_perfume")) {
       product_type = "cooler_perfume";
+      if (["#khus_cooler_perfume"].includes(window.location.hash)){
+        ([{"5ml": "140"}]).forEach(populateSizetable)
+      } else {
+        ([{"5ml": "80"}]).forEach(populateSizetable)
+      }
+    } else if (window.location.hash.includes("_combo")) {
+      product_type = "combo";
+      ([{"6ml each": "380"}]).forEach(populateSizetable)
     } else if (window.location.hash.includes("_perfume")) {
       product_type = "perfume";
+      ([{"8ml pocket friendly": "80"}, {"10ml like pencil": "80"}]).forEach(populateSizetable)
     } else if (window.location.hash.includes("_ittar")) {
       product_type = "ittar";
-      ["2ml", "3ml", "5ml-dropper", "6ml", "12ml"].forEach(populateSizeDropdown)
+      if (["#kesar_chandan_ittar", "#champa_chameli_ittar", "#kesar_gulab_ittar", "#kesar_gulab_chandan_ittar", "#kesar_mogra_chandan_ittar", "#kesar_mogra_ittar", "#khus_cooler_perfume", "#chandan_cooler_perfume", "#kaweda_chandan_ittar"].includes(window.location.hash)){
+        ([{"2ml": "50"},{"3ml": "70"},{"5ml-dropper": "80"}, {"6ml": "100"}, {"12ml": "150"} ]).forEach(populateSizetable)
+      } else if (["#khus_ittar", "#kesar_ittar"].includes(window.location.hash)) {
+        ([{"2ml": "50"},{"3ml": "70"},{"5ml-dropper": "120"}, {"6ml": "120"}, {"12ml": "200"} ]).forEach(populateSizetable)
+      } else {
+        ([{"2ml": "40"},{"3ml": "50"},{"5ml-dropper": "80"}, {"6ml": "80"}, {"12ml": "120"} ]).forEach(populateSizetable)
+      }
     } else if (window.location.hash.includes("_rollon")) {
       product_type = "rollon";
-    }  else if (window.location.hash.includes("_combo")) {
-      product_type = "combo";
-    } else {
+    }
+     else {
         window.location = "https://shreejiittar.mini.store"
     }
 
 
+    
     // Load description
     document.getElementById("product_description").textContent=loadFile("./product_description/"+location.href.split('#')[1]+".txt");
 });
