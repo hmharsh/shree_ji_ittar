@@ -7,7 +7,9 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="css/product_page.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="./js/product_page_js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- Banner -->
@@ -30,8 +32,7 @@
                 <li><a href="#">Three</a></li>
               </ul>
             </li> -->
-            <li><a href="#">Catalogue</a></li>
-            <li><a href="#">Contact</a></li>
+            <!-- <li><a href="#">Reviews</a></li> -->
           </ul>
         </div>
         <div class="top-bar-right">
@@ -64,7 +65,7 @@
       </div>
       
       <div class="medium-6 large-6 columns">
-        <h3><div id="product_title">Product not found </div></h3>
+        <h2><div id="product_title">Product not found </div></h2>
         <p><div id="product_description" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></div></p>
         <!-- <select id="size_dropdown">
         </select> -->
@@ -75,11 +76,12 @@
         </table>
         <br>
         <a id="buy_button" target="_blank" class="hollow button large expanded">Buy on <img src="./images/minis_logo.png" width="20%"></a>
+        <hr/>
         <div class="small secondary expanded button-group">
-            <a class="button" href="https://www.instagram.com/shree_ji_ittar/" target="_blank">Instagram</a>
-            <a class="button" href="https://wa.me/9407472537" target="_blank">Whatsapp</a>
-            <a class="button" href="https://maps.app.goo.gl/RaQUmqNd728Fkkkh8" target="_blank">Direction</a>
-            <a class="button" href="tel:+919407472537" target="_blank">Call us</a>
+            <a class="button" href="https://maps.app.goo.gl/c6mKdkmExXSTsegH6" target="_blank">Check our recent Google reviews</a>
+            <a class="button" href="https://wa.me/9407472537" target="_blank">For any query contact us</a>
+            <!-- <a class="button" href="https://maps.app.goo.gl/RaQUmqNd728Fkkkh8" target="_blank">Direction</a>
+            <a class="button" href="tel:+919407472537" target="_blank">Call us</a> -->
           </div>
         </div>
     </div>
@@ -87,56 +89,56 @@
     <div class="column row">
       <hr>
       <ul class="tabs" data-tabs id="example-tabs">
-        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Reviews</a></li>
-        <li class="tabs-title"><a href="#panel2">Similar Products</a></li>
+        <!-- <li class="tabs-title"><a href="#panel1">Product catalog => </a></li> -->
+        <li class="tabs-title is-active" aria-selected="true"><a class="panel_tab" href="#panel2">Ittar catalog</a></li>
+        <li class="tabs-title"><a class="panel_tab" href="#panel3">Perfume catalog</a></li>
       </ul>
       <div class="tabs-content" data-tabs-content="example-tabs">
-        <div class="tabs-panel is-active" id="panel1">
+        <div class="tabs-panel" id="panel1">
           <!-- <div class='sk-ww-google-reviews' data-embed-id='25407608'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script> -->
         </div>
-        <div class="tabs-panel" id="panel2">
-          <div class="row medium-up-3 large-up-5">
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x200">
-              <h5>Other Product <small>$22</small></h5>
-              <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-              <a href="#" class="button hollow tiny expanded">Buy Now</a>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x200">
-              <h5>Other Product <small>$22</small></h5>
-              <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-              <a href="#" class="button hollow tiny expanded">Buy Now</a>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x200">
-              <h5>Other Product <small>$22</small></h5>
-              <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-              <a href="#" class="button hollow tiny expanded">Buy Now</a>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x200">
-              <h5>Other Product <small>$22</small></h5>
-              <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-              <a href="#" class="button hollow tiny expanded">Buy Now</a>
-            </div>
-            <div class="column">
-              <img class="thumbnail" src="https://placehold.it/350x200">
-              <h5>Other Product <small>$22</small></h5>
-              <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-              <a href="#" class="button hollow tiny expanded">Buy Now</a>
-            </div>
-          </div>
+        <div class="tabs-panel is-active" text- id="panel2">
+          <img src="./images/catalog/ittar_catalog.jpeg">
+          <hr/>
+          <a href="./images/catalog/ittar_catalog.jpeg" class="shop_btn button" download>Download catalog</a>
+          <a href="https://shreejiittar.mini.store" target="_blank" " class="shop_btn button">Shop now</a>
+
+        </div>
+        <div class="tabs-panel" id="panel3">
+          <img src="./images/catalog/perfume catalog.jpeg">
+          <hr/>
+          <a href="./images/catalog/perfume catalog.jpeg" download class="shop_btn button">Download catalog</a>
+          <a href="https://shreejiittar.mini.store" target="_blank"  class="shop_btn button">Shop now</a>
         </div>
       </div>
     </div>
+<br/>
+    <div class="callout large secondary">
+      <div class="row">
+        <div class="large-6 columns mycontent">
+          <h4>We specialize in crafting devotional fragrances..</h4>
+          <div>- <u>Free</u> home delivery across India on order > <b>₹399</b></div>
+          <div>- Use code <u>MYFIRSTORDER</u> to get 10% off on 1st order > <b>₹259</b></div>
+          <div>- <a href="tel:+919407472537">Contact us</a> for personalised fragrance</div>
 
+        </div>
+        <div class="large-4 columns">
+          <ul class="menu">
+            <hr/>
+            <h4>Get in touch..</h4>
+            <li><a target="_blank" class="fa fa-2x fa-instagram" href="https://www.instagram.com/shree_ji_ittar/" target="_blank"></a></li>
+            <li><a target="_blank" class="fa fa-2x fa-whatsapp" href="https://wa.me/9407472537" target="_blank"></a></li>
+            <li><a target="_blank" class="fa fa-2x fa-location-arrow" href="https://maps.app.goo.gl/RaQUmqNd728Fkkkh8" target="_blank"></a></li>
+            <li><a target="_blank" class="fa fa-2x fa-phone" href="tel:+919407472537" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="row column">
       <hr>
       <ul class="menu">
         <li>Shree Ji Ittar</li>
-        <li><a href="#">Catalogue</a></li>
-        <li><a href="#">Contact</a></li>
+        <!-- <li><a href="#">Reviews</a></li> -->
         <li class="float-right">Copyright &copy; Shree Ji Ittar
             <script type="text/javascript">
               document.write(new Date().getFullYear());

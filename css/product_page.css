@@ -1,3 +1,6 @@
+body {
+    font-family: 'Poppins';
+}
 th {
     background-color: rgb(241, 241, 241);
     font-weight: bolder;
@@ -21,3 +24,82 @@ table td {
 .thumbnail1:hover {
     transform: scale(1.1);
 }
+
+.shop_button {
+    width: 50%
+}
+
+.mycontent {
+    line-height: 200%;
+    font-size: large;
+}
+
+.panel_tab {
+    font-size: large;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    align-self: center
+}
+
+#product_title {
+    font-weight: bold;
+}
+
+.fa {
+  color: black;
+  padding: 20px;
+  /* font-size: 100px; */
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.fa:hover {
+    transform: scale(1.5);
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: .5;
+  }
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    align-self: center
+  }
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  .tabs-panel {
+    text-align: center;
+  }
