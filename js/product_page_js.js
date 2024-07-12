@@ -36,12 +36,15 @@ function loadFile(filePath) {
   product_name="N/A"
   if (window.location.href.split('?')[1].split('=')[0] ==  "product_name"){
     product_name=window.location.href.split('?')[1].split('=')[1]
-    document.title = product_name.replaceAll("_", " ").toUpperCase() + " || Shree Ji Ittar"
+    document.title = product_name.replaceAll("_", " ").toUpperCase() + " | Shree Ji Ittar"
   }
+
 
   document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("product_title").textContent=product_name.replaceAll("_", " ").toUpperCase()
   document.getElementById("product_img").src = "./images/product/"+product_name+".jpeg";
+
+  document.getElementById("shareBtn").setAttribute("data-a2a-url", window.location.href.toString())
 
 
   // Identify product_type
