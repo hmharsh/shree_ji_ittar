@@ -1,5 +1,5 @@
 
-const headings = ["Natural & Skin safe", "Budget friendly options", "Available in multiple size", "Aromatherapy grade"];
+const headings = ["Truely natural", "Budget friendly", "Available in multiple size", "Aromatherapy grade"];
 var random = "1"
 setInterval(function () {
 random = Math.floor(Math.random() * headings.length);

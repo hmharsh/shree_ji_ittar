@@ -84,6 +84,11 @@ table td {
   cursor: pointer;
 }
 
+#speak_in_hindi:hover, #speak_in_english:hover {
+  background-color: yellow;
+}
+
+
 .fa {
   color: black;
   padding: 20px;
@@ -99,12 +104,11 @@ table td {
 }
 
 .blink_me {
-  animation: blinker 1s linear infinite;
+  animation: blinker 2s linear infinite;
 }
-
 @keyframes blinker {
   50% {
-    opacity: .5;
+    opacity: .6;
   }
 }
 
@@ -148,4 +152,3 @@ table td {
   to {
     opacity: 1;
   }
-
