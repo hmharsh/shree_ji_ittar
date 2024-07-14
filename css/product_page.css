@@ -53,6 +53,37 @@ table td {
     font-weight: bold;
 }
 
+#about_us {
+  border: 3px solid pink;
+  box-shadow: 5px 6px hotpink;
+  font-family: "Comfortaa", sans-serif;
+  /* font-family: "Special Elite", system-ui; */
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: larger;
+  padding: 25px 50px;
+}
+#box_heading {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    /* font-style: normal; */
+    font-size: xx-large
+}
+#box_titel {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  /* font-style: normal; */
+  font-size: large
+}
+.highlight-text {
+  background-color: yellow;
+}
+
+#speak_in_hindi, #speak_in_english {
+  cursor: pointer;
+}
+
 .fa {
   color: black;
   padding: 20px;
@@ -117,3 +148,4 @@ table td {
   to {
     opacity: 1;
   }
+

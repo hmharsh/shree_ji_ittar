@@ -1,3 +1,6 @@
+
+
+
 // On image click
 function swapImg(i){
   console.log(document.getElementById("product_img"))
@@ -31,21 +34,16 @@ function loadFile(filePath) {
     }
     return result;
   }
-
   // Load and assign product details
   product_name="N/A"
   if (window.location.href.split('?')[1].split('=')[0] ==  "product_name"){
     product_name=window.location.href.split('?')[1].split('=')[1]
     document.title = product_name.replaceAll("_", " ").toUpperCase() + " | Shree Ji Ittar"
   }
-
-
   document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("product_title").textContent=product_name.replaceAll("_", " ").toUpperCase()
-  document.getElementById("product_img").src = "./images/product/"+product_name+".jpeg";
-
-  document.getElementById("shareBtn").setAttribute("data-a2a-url", window.location.href.toString())
-
+    document.getElementById("product_title").textContent=product_name.replaceAll("_", " ").toUpperCase()
+    document.getElementById("product_img").src = "./images/product/"+product_name+".jpeg";
+    document.getElementById("shareBtn").setAttribute("data-a2a-url", window.location.href.toString())
 
   // Identify product_type
   product_type=undefined
@@ -80,7 +78,9 @@ function loadFile(filePath) {
         window.location = "https://shreejiittar.mini.store"
     }
     addExtraImages(product_type)
-    
     // Load description
     document.getElementById("product_description").textContent=loadFile("./product_description/"+product_name+".txt");
 });
+
+
+
