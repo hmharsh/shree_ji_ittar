@@ -152,4 +152,29 @@ table td {
   to {
     opacity: 1;
   }
+}
 
+
+#nav_element a {
+  float: left; /* Float the links to the left */
+  display: block; /* Display links as blocks */
+  color: black; /* text color */
+  text-align: center; /* Center-align the text */
+  padding: 14px 16px; /* Padding around the links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+#nav_element a:hover {
+  background-color: black; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+#focused a {
+  float: left; /* Float the links to the left */
+  display: block; /* Display links as blocks */
+  color: white; /* text color */
+  text-align: center; /* Center-align the text */
+  padding: 14px 16px; /* Padding around the links */
+  text-decoration: none; /* Remove underline from links */
+  background-color: grey;
+}
