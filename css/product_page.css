@@ -178,3 +178,9 @@ table td {
   text-decoration: none; /* Remove underline from links */
   background-color: grey;
 }
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: wavy;
+}
