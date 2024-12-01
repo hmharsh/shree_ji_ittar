@@ -56,18 +56,18 @@ function loadFile(filePath) {
       }
     } else if (product_name.includes("_combo")) {
       product_type = "combo";
-      ([{"6ml each": "550"}]).forEach(populateSizetable)
+      ([{"6ml each": "500"}]).forEach(populateSizetable)
     } else if (product_name.includes("_perfume")) {
       product_type = "perfume";
-      ([{"8ml pocket friendly": "120"}, {"10ml like pencil": "140"}, {"20ml": "200"}]).forEach(populateSizetable)
+      ([{"8ml pocket friendly": "120"}]).forEach(populateSizetable)
     } else if (product_name.includes("_ittar")) {
       product_type = "ittar";
-      if (["#kesar_chandan_ittar", "#champa_chameli_ittar", "#kesar_gulab_ittar", "#kesar_gulab_chandan_ittar", "#kesar_mogra_chandan_ittar", "#kesar_mogra_ittar", "#khus_cooler_perfume", "#chandan_cooler_perfume", "#kaweda_chandan_ittar"].includes(product_name)){
+      if (["#for_future"].includes(product_name)){
         ([{"2ml": "85"},{"3ml": "100"},{"5ml-dropper": "120"}, {"6ml": "120"}, {"12ml": "180"} ]).forEach(populateSizetable)
       } else if (["#khus_ittar", "#kesar_ittar"].includes(product_name)) {
         ([{"2ml": "140"},{"3ml": "170"},{"5ml-dropper": "240"}, {"6ml": "250"}, {"12ml": "540"} ]).forEach(populateSizetable)
       } else {
-        ([{"2ml": "85"},{"3ml": "100"},{"5ml-dropper": "120"}, {"6ml": "120"}, {"12ml": "180"} ]).forEach(populateSizetable)
+        ([{"2ml": "60"},{"3ml": "80"},{"5ml-dropper": "100"}, {"6ml": "120"}, {"12ml": "200"} ]).forEach(populateSizetable)
       }
     } else if (product_name.includes("_rollon")) {
       product_type = "rollon";
