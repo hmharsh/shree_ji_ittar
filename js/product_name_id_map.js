@@ -17,7 +17,7 @@ const productUrlMap = [
     {name: "bubblegum_or_boomer_fragrance_spray_perfume",id: "1b2ace28-f713-43e8-b9b7-c5050eabf6ab"},
     {name: "cool_water_spray_perfume",id: "358075cb-dda6-4c20-a673-1ec65c4b8957"},
     {name: "mogra_spray_perfume",id: "4ab4528f-e331-4005-b757-bbe11203192e"},
-    {name: "dalchini_or_cinnamon_ittar",id: "5d558346-a6f2-4212-abe1-cdaae8cbe5ae"},
+    {name: "dalchini_or_cinnamon_ittar",id: "c8db9bf7-11fa-4196-a539-1f35c5b07287"},
     {name: "mysore_sandal_soap_spray_perfume",id: "5edca1cb-ba15-44aa-aa32-bb2148005b08"},
     {name: "geeli_mitti_spray_perfume",id: "675ddd69-e536-4eb1-82c6-0e634ea433a4"},
     {name: "kesar_chandan_spray_perfume",id: "7acdec62-1afe-4352-a737-ed47a8ac5a02"},
