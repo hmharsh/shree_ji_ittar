@@ -1,6 +1,11 @@
 body {
     font-family: 'Poppins';
 }
+#headText {
+  font-family: "Special Elite", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 th {
     background-color: rgb(241, 241, 241);
     font-weight: bolder;
@@ -160,8 +165,9 @@ table td {
   display: block; /* Display links as blocks */
   color: black; /* text color */
   text-align: center; /* Center-align the text */
-  padding: 14px 16px; /* Padding around the links */
+  padding: 8px 12px; /* Padding around the links */
   text-decoration: none; /* Remove underline from links */
+  font-size: 12px;
 }
 
 #nav_element a:hover {
@@ -174,9 +180,10 @@ table td {
   display: block; /* Display links as blocks */
   color: white; /* text color */
   text-align: center; /* Center-align the text */
-  padding: 14px 16px; /* Padding around the links */
+  padding: 8px 12px; /* Padding around the links */
   text-decoration: none; /* Remove underline from links */
-  background-color: grey;
+  background-color: black;
+  font-size: 12px;
 }
 
 a:link {
@@ -184,3 +191,5 @@ a:link {
   background-color: transparent;
   text-decoration: wavy;
 }
+
+

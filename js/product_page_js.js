@@ -43,6 +43,7 @@ function loadFile(filePath) {
   }
   document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("product_title").textContent=product_name.replaceAll("_", " ").toUpperCase()
+    document.getElementById("product_path").textContent=product_name.replaceAll("_", " ").toUpperCase()
     document.getElementById("product_img").src = "./images/product/"+product_name+".jpeg";
     document.getElementById("shareBtn").setAttribute("data-a2a-url", window.location.href.toString())
 
