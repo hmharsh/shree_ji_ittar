@@ -192,6 +192,11 @@ a:link {
   text-decoration: wavy;
 }
 
+#link {
+  color: black;
+  background-color: transparent;
+}
+
 .li_footer {
   padding-left: 1000;
   margin-left: 100;
