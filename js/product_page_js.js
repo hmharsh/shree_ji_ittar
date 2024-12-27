@@ -66,7 +66,7 @@ function loadFile(filePath) {
       product_type = "ittar";
       if (["#for_future"].includes(product_name)){
         ([{"2ml": "85"},{"3ml": "100"},{"5ml-dropper": "120"}, {"6ml": "120"}, {"12ml": "180"} ]).forEach(populateSizetable)
-      } else if (["#khus_ittar", "#kesar_ittar"].includes(product_name)) {
+      } else if (product_name == "khus_ittar") {
         ([{"2ml": "140"},{"3ml": "170"},{"5ml-dropper": "240"}, {"6ml": "250"}, {"12ml": "540"} ]).forEach(populateSizetable)
       } else {
         ([{"2ml": "60"},{"3ml": "80"},{"5ml-dropper": "100"}, {"6ml": "120"}, {"12ml": "200"} ]).forEach(populateSizetable)

@@ -192,4 +192,10 @@ a:link {
   text-decoration: wavy;
 }
 
-
+.li_footer {
+  padding-left: 1000;
+  margin-left: 100;
+  margin: 10 auto 50px 10px;
+    position: absolute;
+    left: 10px
+}
