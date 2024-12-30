@@ -61,7 +61,7 @@ function loadFile(filePath) {
       ([{"6ml each": "500"}]).forEach(populateSizetable)
     } else if (product_name.includes("_perfume")) {
       product_type = "perfume";
-      ([{"8ml pocket friendly": "120"}]).forEach(populateSizetable)
+      ([{"8ml": "120"}, {"20ml": "200"}]).forEach(populateSizetable)
     } else if (product_name.includes("_ittar")) {
       product_type = "ittar";
       if (["#for_future"].includes(product_name)){
