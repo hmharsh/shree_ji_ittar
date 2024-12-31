@@ -1,6 +1,3 @@
-
-alert(window.location.href)
-
 // On image click
 function swapImg(i){
   console.log(document.getElementById("product_img"))
