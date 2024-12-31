@@ -5,4 +5,3 @@ setInterval(function () {
 random = Math.floor(Math.random() * headings.length);
 document.getElementById("headText").innerText = headings[random]
 }, 1500);
-

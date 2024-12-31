@@ -1,5 +1,5 @@
 
-
+alert(window.location.href)
 
 // On image click
 function swapImg(i){
