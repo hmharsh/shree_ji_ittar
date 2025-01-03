@@ -7,9 +7,9 @@ function swapImg(i){
 }
 
 function addExtraImages(productType){
-  document.getElementById("additionalImg1").src = "./images/additional/"+productType+"/1.jpeg";
-  document.getElementById("additionalImg2").src = "./images/additional/"+productType+"/2.jpeg";
-  document.getElementById("additionalImg3").src = "./images/additional/"+productType+"/3.jpeg";
+  document.getElementById("additionalImg1").src = "./images/additional/"+productType+"/1.jpg";
+  document.getElementById("additionalImg2").src = "./images/additional/"+productType+"/2.jpg";
+  document.getElementById("additionalImg3").src = "./images/additional/"+productType+"/3.jpg";
 }
 function populateSizetable(sizePriceMap){
      var row = document.getElementById("size_price_table").insertRow();
@@ -41,7 +41,7 @@ function loadFile(filePath) {
   document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("product_title").textContent=product_name.replaceAll("_", " ").toUpperCase()
     document.getElementById("product_path").textContent=product_name.replaceAll("_", " ").toUpperCase()
-    document.getElementById("product_img").src = "./images/product/"+product_name+".jpeg";
+    document.getElementById("product_img").src = "./images/product/"+product_name+".jpg";
     document.getElementById("shareBtn").setAttribute("data-a2a-url", window.location.href.toString())
 
   // Identify product_type
