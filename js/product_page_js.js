@@ -55,18 +55,18 @@ function loadFile(filePath) {
       }
     } else if (product_name.includes("_combo")) {
       product_type = "combo";
-      ([{"6ml each": "500"}]).forEach(populateSizetable)
+      ([{"6ml each": "250"}]).forEach(populateSizetable)
     } else if (product_name.includes("_perfume")) {
       product_type = "perfume";
-      ([{"8ml": "120"}, {"20ml": "200"}]).forEach(populateSizetable)
+      ([{"8ml": "50"}, {"20ml": "100"}]).forEach(populateSizetable)
     } else if (product_name.includes("_ittar")) {
       product_type = "ittar";
       if (["#for_future"].includes(product_name)){
         ([{"2ml": "85"},{"3ml": "100"},{"5ml-dropper": "120"}, {"6ml": "120"}, {"12ml": "180"} ]).forEach(populateSizetable)
       } else if (product_name == "khus_ittar") {
-        ([{"2ml": "140"},{"3ml": "170"},{"5ml-dropper": "240"}, {"6ml": "250"}, {"12ml": "540"} ]).forEach(populateSizetable)
+        ([{"2ml": "80"},{"3ml": "120"},{"5ml-dropper": "180"}, {"6ml": "220"}, {"12ml": "400"} ]).forEach(populateSizetable)
       } else {
-        ([{"2ml": "60"},{"3ml": "80"},{"5ml-dropper": "100"}, {"6ml": "120"}, {"12ml": "200"} ]).forEach(populateSizetable)
+        ([{"2ml": "30"},{"3ml": "40"},{"5ml-dropper": "50"}, {"6ml": "60"}, {"12ml": "100"} ]).forEach(populateSizetable)
       }
     } else if (product_name.includes("_rollon")) {
       product_type = "rollon";
