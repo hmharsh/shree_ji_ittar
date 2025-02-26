@@ -53,10 +53,20 @@ function loadFile(filePath) {
       } else {
         ([{"5ml": "80"}]).forEach(populateSizetable)
       }
-    } else if (product_name.includes("_combo")) {
-      product_type = "combo";
+    } else if (product_name.includes("_comboo")) {
+      product_type = "comboo";
       ([{"6ml each": "250"}]).forEach(populateSizetable)
-    } else if (product_name.includes("_perfume")) {
+    } else if (product_name.includes("ittar_combo_2ml_each_pack_of_4")) {
+      product_type = "ittar_combo";
+      ([{"6ml each": "140"}]).forEach(populateSizetable)
+    } else if (product_name.includes("ittar_combo_6ml_each_pack_of_4")) {
+      product_type = "ittar_combo";
+      ([{"6ml each": "280"}]).forEach(populateSizetable)
+    } else if (product_name.includes("ittar_combo_6ml_each_pack_of_5")) {
+      product_type = "ittar_combo";
+      ([{"6ml each": "320"}]).forEach(populateSizetable)
+    }
+    else if (product_name.includes("_perfume")) {
       product_type = "perfume";
       ([{"8ml": "50"}, {"20ml": "100"}]).forEach(populateSizetable)
     } else if (product_name.includes("_ittar")) {
