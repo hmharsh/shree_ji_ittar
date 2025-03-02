@@ -35,6 +35,9 @@ function loadFile(filePath) {
   product_name="N/A"
   if (window.location.href.split('?')[1].split('=')[0] ==  "product_name"){
     product_name=window.location.href.split('?')[1].split('=')[1]
+    if (product_name.includes('?')){
+      product_name=product_name.split('?')[0]
+    }
     document.getElementById("head_link").setAttribute("href", "https://shreejiittar.in/product.html?product_name="+product_name);
     document.title = product_name.replaceAll("_", " ").toUpperCase() + " | Shree Ji Ittar"
   }
