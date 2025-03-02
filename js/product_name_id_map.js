@@ -41,5 +41,8 @@ const productUrlMap = [
     {name: "gulab_chandan_ittar", id: "c48f43fe-73b3-47bc-9ca7-85662d91d486"},
     {name: "mogra_chandan_ittar", id: "7d9c77af-42ff-4de7-9b75-02d5708c32d0"},
     {name: "khus_spray_perfume", id: "28f35cea-9d35-4162-859c-cf039a989315"},
-    {name: "lotus_perfume", id: "c72cd011-7a99-4557-b028-f3cfea2b8ff5"}
+    {name: "lotus_perfume", id: "c72cd011-7a99-4557-b028-f3cfea2b8ff5"},
+    {name: "ittar_combo_2ml_each_pack_of_4", id: "fb68b8a1-0c00-4cbd-a7dc-df68c20cc1ba"},
+    {name: "ittar_combo_6ml_each_pack_of_4", id: "9ab118c1-cd9a-40cd-81f2-c2d8f6139bd1"},
+    {name: "ittar_combo_6ml_each_pack_of_5", id: "813171f4-1fcf-4a1c-af2f-e156af0ccb94"}
 ]
