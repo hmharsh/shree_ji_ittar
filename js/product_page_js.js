@@ -1,3 +1,33 @@
+// product_img
+document.addEventListener('DOMContentLoaded', function() {
+  imageSwipeFunc();
+});
+
+function imageSwipeFunc(){
+const touchableElement = document.getElementById("product_img")
+touchableElement.addEventListener('touchstart', function (event) {
+  touchstartX = event.changedTouches[0].screenX;
+  touchstartY = event.changedTouches[0].screenY;
+}, false);
+touchableElement.addEventListener('touchend', function (event) {
+  touchendX = event.changedTouches[0].screenX;
+  touchendY = event.changedTouches[0].screenY;
+  handleGesture();
+}, false);
+function handleGesture() {
+  if (touchendX < touchstartX) {
+      console.log('Swiped Left');
+  }
+  if (touchendX > touchstartX) {
+      console.log('Swiped Right');
+  }
+  if (touchendY === touchstartY) {
+      console.log('Tap');
+  }
+}
+}
+
+
 // On image click
 function swapImg(i){
   console.log(document.getElementById("product_img"))
@@ -93,6 +123,4 @@ function loadFile(filePath) {
     // Load description
     document.getElementById("product_description").textContent=loadFile("./product_description/"+product_name+".txt");
 });
-
-
 
