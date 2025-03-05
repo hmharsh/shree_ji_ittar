@@ -17,9 +17,20 @@ touchableElement.addEventListener('touchend', function (event) {
 function handleGesture() {
   if (touchendX < touchstartX) {
       console.log('Swiped Left');
+      let tempImg = document.getElementById("product_img").src
+      document.getElementById("product_img").src = document.getElementById("additionalImg3").src
+      document.getElementById("additionalImg3").src = document.getElementById("additionalImg2").src
+      document.getElementById("additionalImg2").src = document.getElementById("additionalImg1").src
+      document.getElementById("additionalImg1").src = tempImg
+
   }
   if (touchendX > touchstartX) {
       console.log('Swiped Right');
+      let tempImg = document.getElementById("product_img").src
+      document.getElementById("product_img").src = document.getElementById("additionalImg1").src
+      document.getElementById("additionalImg1").src = document.getElementById("additionalImg2").src
+      document.getElementById("additionalImg2").src = document.getElementById("additionalImg3").src
+      document.getElementById("additionalImg3").src = tempImg
   }
   if (touchendY === touchstartY) {
       console.log('Tap');
